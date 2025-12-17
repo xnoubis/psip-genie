@@ -1,2 +1,0 @@
-# psip-genie
-psip
