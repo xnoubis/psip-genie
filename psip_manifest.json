@@ -1,0 +1,45 @@
+{
+  "network_id": "PSIP-GENIE-ALPHA",
+  "version": "1.0.0",
+  "seed_glyph": "⟁MANIFEST:CORE:001⟁",
+  "artifacts": [
+    {
+      "role": "Index",
+      "seed": "⟁GENIE:NEXUS:ORIGIN:ALPHA:99⟁",
+      "filename": "psip_index.html",
+      "url": "./psip_index.html",
+      "sha256": "TO_BE_FILLED"
+    },
+    {
+      "role": "Builder",
+      "seed": "⟁AGENT:BUILDER:ARCHITECT:V1⟁",
+      "filename": "psip_builder.html",
+      "url": "./psip_builder.html",
+      "sha256": "TO_BE_FILLED"
+    },
+    {
+      "role": "Validator",
+      "seed": "⟁AGENT:VALIDATOR:MAVEN:V1⟁",
+      "filename": "psip_validator.html",
+      "url": "./psip_validator.html",
+      "sha256": "TO_BE_FILLED"
+    },
+    {
+      "role": "Meta-Validator",
+      "seed": "⟁AGENT:META:OBSERVER:V1⟁",
+      "filename": "psip_meta.html",
+      "url": "./psip_meta.html",
+      "sha256": "TO_BE_FILLED"
+    }
+  ],
+  "agent_swarm": [
+    { "role": "Builder", "seed": "⟁AGENT:BUILDER:ARCHITECT:V1⟁", "status": "Active" },
+    { "role": "Validator", "seed": "⟁AGENT:VALIDATOR:MAVEN:V1⟁", "status": "Active" },
+    { "role": "Meta-Validator", "seed": "⟁AGENT:META:OBSERVER:V1⟁", "status": "Active" }
+  ],
+  "protocols": {
+    "rotation_order": ["Builder", "Validator", "Meta-Validator"],
+    "shakespeare_riddle": "Insight survives role rotation if it is true.",
+    "ambiguity_policy": "Map fault lines; do not force convergence."
+  }
+}
